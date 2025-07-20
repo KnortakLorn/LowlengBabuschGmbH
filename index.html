@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabakladen Babusch</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+  <style>
+    body {
+  margin: 0;
+  background: #f5f0e6;
+  color: #3d2b1f;
+  font-family: 'Libre Caslon Text', serif;
+}
+
+a{
+
+  text-decoration: none;   
+  color: inherit;          
+  display: block;          
+
+}
+.hero {
+  background: url('assets/paper-texture.jpg') center/cover;
+  padding: 60px;
+  text-align: center;
+  color: #4a3000;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background: #fff;
+  border: 2px solid #3d2b1f;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+/* Farben für jede Sorte */
+.card.red {
+  border-color: #b00020;
+  background-color: #ffe5e5;
+}
+.card.blue {
+  border-color: #1e40af;
+  background-color: #e0eaff;
+}
+.card.green {
+  border-color: #166534;
+  background-color: #e6f9e8;
+}
+.card.yellow {
+  border-color: #d97706;
+  background-color: #fffbe6;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+
+
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>Tabakladen Babusch</h1>
+    <p>Echte Tradition. Klassische Schnupftabake seit 1850.</p>
+  </header>
+  
+  <section class="products">
+    <a href="roter taback.html"><div class="card red">
+      <h2>Roter Tabak</h2>
+      <p>Kräftig und feurig, mit tiefem Aroma.</p>
+    </div></a>
+    <a href="blauer taback.html"><div class="card blue">
+      <h2>Blauer Tabak</h2>
+      <p>Frisch und kühl – ideal für den Abend.</p>
+    </div></a>
+    <a href="grüner tabak.html"><div class="card green">
+      <h2>Grüner Tabak</h2>
+      <p>Kräutrig und mild, mit feinem Waldduft.</p>
+    </div></a>
+    <a href="gelber tabak.html"><div class="card yellow">
+      <h2>Gelber Tabak</h2>
+      <p>Leicht und sonnig, mit floraler Note.</p>
+    </div></a>
+  </section>
+  
+  <footer>
+    <p>© 2025 Lowleng Babusch GmbH</p>
+  </footer>
+</body>
+</html>
