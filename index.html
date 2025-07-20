@@ -1,122 +1,115 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Tabakladen Babusch</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <title>Lowleng Babusch – Tabakladen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap" rel="stylesheet" />
   <style>
     body {
-  margin: 0;
-  background: #f5f0e6;
-  color: #3d2b1f;
-  font-family: 'Libre Caslon Text', serif;
-}
+      margin: 0;
+      font-family: 'Libre Caslon Text', serif;
+      background: url('assets/paper-texture.jpg') center/cover no-repeat;
+      color: #3d2b1f;
+    }
 
-a{
+    header {
+      background: linear-gradient(135deg, #5c4522, #a17c50);
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
 
-  text-decoration: none;   
-  color: inherit;          
-  display: block;          
+    h1 {
+      font-size: 2em;
+      margin: 0 0 10px;
+    }
 
-}
-.hero {
-  background: url('assets/paper-texture.jpg') center/cover;
-  padding: 60px;
-  text-align: center;
-  color: #4a3000;
-}
+    p {
+      font-size: 1.1em;
+    }
 
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
-}
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
 
-.hero p {
-  font-size: 18px;
-}
+    @media (min-width: 600px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
 
-.products {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 40px;
-}
+    @media (min-width: 900px) {
+      .grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
 
-.card {
-  background: #fff;
-  border: 2px solid #3d2b1f;
-  padding: 20px;
-  width: 200px;
-  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
-}
+    .card {
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 12px;
+      text-align: center;
+      padding: 20px;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    }
 
-.card:hover {
-  transform: scale(1.03);
-}
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+    }
 
-.card h2 {
-  margin-top: 0;
-  font-size: 20px;
-}
+    .card.red { background: #ffcccc; }
+    .card.blue { background: #cce5ff; }
+    .card.green { background: #d2f8d2; }
+    .card.yellow { background: #fff7cc; }
 
-/* Farben für jede Sorte */
-.card.red {
-  border-color: #b00020;
-  background-color: #ffe5e5;
-}
-.card.blue {
-  border-color: #1e40af;
-  background-color: #e0eaff;
-}
-.card.green {
-  border-color: #166534;
-  background-color: #e6f9e8;
-}
-.card.yellow {
-  border-color: #d97706;
-  background-color: #fffbe6;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-}
-
-
-
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background-color: #eee3d0;
+    }
   </style>
 </head>
 <body>
-  <header class="hero">
-    <h1>Tabakladen Babusch</h1>
-    <p>Echte Tradition. Klassische Schnupftabake seit 1850.</p>
+
+  <header>
+    <h1>Willkommen bei Lowleng Babusch</h1>
+    <p>Traditioneller Tabak seit 1850</p>
   </header>
-  
-  <section class="products">
-    <a href="roter taback.html"><div class="card red">
-      <h2>Roter Tabak</h2>
-      <p>Kräftig und feurig, mit tiefem Aroma.</p>
-    </div></a>
-    <a href="blauer taback.html"><div class="card blue">
-      <h2>Blauer Tabak</h2>
-      <p>Frisch und kühl – ideal für den Abend.</p>
-    </div></a>
-    <a href="grüner tabak.html"><div class="card green">
-      <h2>Grüner Tabak</h2>
-      <p>Kräutrig und mild, mit feinem Waldduft.</p>
-    </div></a>
-    <a href="gelber tabak.html"><div class="card yellow">
-      <h2>Gelber Tabak</h2>
-      <p>Leicht und sonnig, mit floraler Note.</p>
-    </div></a>
-  </section>
-  
+
+  <main>
+    <section class="grid">
+      <a href="roter tabak.html" class="card red">
+        <h2>Roter Tabak</h2>
+        <p>Feurig & stark</p>
+      </a>
+      <a href="blauer tabak.html" class="card blue">
+        <h2>Blauer Tabak</h2>
+        <p>Kühl & elegant</p>
+      </a>
+      <a href="grüner tabak.html" class="card green">
+        <h2>Grüner Tabak</h2>
+        <p>Mild & kräutrig</p>
+      </a>
+      <a href="gelber tabak.html" class="card yellow">
+        <h2>Gelber Tabak</h2>
+        <p>Leicht & blumig</p>
+      </a>
+    </section>
+  </main>
+
   <footer>
-    <p>© 2025 Lowleng Babusch GmbH</p>
+    © 2025 Lowleng Babusch GmbH – Handgerollt mit ❤️
   </footer>
+
 </body>
 </html>
